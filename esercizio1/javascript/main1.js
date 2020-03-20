@@ -2,6 +2,9 @@
 
 var number1, number2;
 
+// messaggio all'utente
+alert("Il software stabilirà il numero più grande tra i due che digiterai nella finestra successiva");
+
 // chiedo all'utente di inserire il primo numero
 number1 = parseInt(prompt("Inserici qui il primo numero"));
 
