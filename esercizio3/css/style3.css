@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(rgba(255, 255, 255, .3) 5%, rgba(0, 0, 0, 0.6)),
+              url(../img/1600x900_winter-freshness-landscapes.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+  opacity: 0;
+  animation: fade 2s forwards ease-out;
+}
+
+.load {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
+
+.load span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #6c0dbf;
+  position: absolute;
+}
+
+.first {
+  top: 0;
+  left: 0;
+  animation: loading-first 2s infinite ease-in-out;
+}
+
+.second {
+top: 0;
+left: 20px;
+animation: loading-second 2s infinite ease-in-out;
+}
+
+.third {
+top: 20px;
+left: 0;
+animation: loading-third 2s infinite ease-in-out;
+}
+
+.fourth {
+top: 20px;
+left: 20px;
+animation: loading-fourth 2s infinite ease-in-out;
+}
+
+
+@keyframes fade {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    border: double 4px white;
+    border-radius: 15px;
+    padding: 15px;
+
+
+  }
+}
+
+
+@keyframes loading-first {
+  0 % {
+    top: 0;
+    left: 0;
+    background-color: #6c0dbf;
+    border-radius: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    top: 10px;
+    left: -30px;
+    background-color: #20a148;
+    border-radius: 100%;
+    transform: rotate(360deg);
+  }
+
+  85% {
+    background-color: #20a148;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    background-color: #6c0dbf;
+    border-radius: 0;
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes loading-second {
+  0 % {
+    top: 0;
+    left: 20px;
+    background-color: #6c0dbf;
+    border-radius: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    top: 10px;
+    left: 50px;
+    background-color: #a31010;
+    border-radius: 100%;
+    transform: rotate(-360deg);
+  }
+
+  85% {
+    background-color: #a31010;
+  }
+
+  100% {
+    top: 0;
+    left: 20px;
+    background-color: #6c0dbf;
+    border-radius: 0;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-third {
+  0 % {
+    top: 20px;
+    left: 0;
+    background-color: #6c0dbf;
+    border-radius: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    top: 10px;
+    left: -30px;
+    background-color: #259eec;
+    border-radius: 100%;
+    transform: rotate(360deg);
+  }
+
+  85% {
+    background-color: #259eec;
+  }
+
+  100% {
+    top: 20px;
+    left: 0;
+    background-color: #6c0dbf;
+    border-radius: 0;
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes loading-fourth {
+  0 % {
+    top: 20px;
+    left: 20px;
+    background-color: #6c0dbf;
+    border-radius: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    top: 10px;
+    left: 50px;
+    background-color: #eccf11;
+    border-radius: 100%;
+    transform: rotate(-360deg);
+  }
+
+  85% {
+    background-color: #eccf11;
+  }
+
+  100% {
+    top: 20px;
+    left: 20px;
+    background-color: #6c0dbf;
+    border-radius: 0;
+    transform: rotate(360deg);
+  }
+}
