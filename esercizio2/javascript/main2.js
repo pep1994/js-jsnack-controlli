@@ -2,8 +2,7 @@
 
 var word1, word2;
 
-alert("Ti verrà chiesto di inserire due parole, il software stamperà prima la parola più corta e poi quella più lunga");
-
+alert("Il software ti chiederà di inserire due parole. La più corta delle due verrà stampata per prima");
 // chiedo all'utente di inserire la prima parola
 word1 = prompt("Inserisci la prima parola");
 
@@ -12,13 +11,13 @@ word2 = prompt("Inserisci la seconda parola");
 
 // logica e output della parola corta e della parola lunga
 if (word1.length > word2.length) {
-  document.getElementById('short-word').innerHTML = "Questa è la parola più corta: " + word2;
+  document.getElementById('content-1').innerHTML = '<h2 class="short-word">' + 'Questa è la parola più corta: ' + word2 + '</h2>';
   alert("Ora il software stamperà la parola più lunga");
-  document.getElementById('long-word').innerHTML = "Questa è la parola più lunga: " + word1;
+  document.getElementById('content-2').innerHTML = '<h2 class="long-word">' + 'Questa è la parola più lunga: ' + word1 + '</h2>';
 } else if (word1.length < word2.length) {
-  document.getElementById('short-word').innerHTML = "Questa è la parola più corta: " + word1;
-  alert("Ora il software stamperà la parola più lunga");
-  document.getElementById('long-word').innerHTML = "Questa è la parola più lunga: " + word2;
+    document.getElementById('content-1').innerHTML = '<h2 class="short-word">' + 'Questa è la parola più corta: ' + word1 + '</h2>';
+    alert("Ora il software stamperà la parola più lunga");
+    document.getElementById('content-2').innerHTML = '<h2 class="long-word">' + 'Questa è la parola più lunga: ' + word2 + '</h2>';
 } else {
-  document.getElementById('short-word').innerHTML = "Le parole inserite sono della stessa lunghezza";
+    document.getElementById('content-2').innerHTML = '<h2 class="equal-word">' + 'La parola: ' + word1 + ' è lunga come la parola: ' + word2 + '</h2>';
 }

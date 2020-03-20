@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3)),
+              url("https://source.unsplash.com/1600x900/?nature,water") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  padding: 10px;
+  color: #fff;
+  font-size: 35px;
+  text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.short-word {
+  opacity: 0;
+  animation-name: fade-to-left;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  transform: translateX(150px);
+}
+
+.long-word {
+  opacity: 0;
+  animation-name: fade-to-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  transform: translateX(-150px);
+}
+
+.equal-word {
+  opacity: 0;
+  animation-name: fade-to-top;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  transform: translateY(150px);
+}
+
+@keyframes fade-to-left {
+
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  80% {
+    opacity: .7;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1.2);
+  }
+}
+
+@keyframes fade-to-right {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  80% {
+    opacity: .7;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1.2);
+  }
+}
+
+@keyframes fade-to-top {
+
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+
+  80% {
+    opacity: .7;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1.2);
+  }
+}
