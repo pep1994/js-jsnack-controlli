@@ -8,7 +8,7 @@ body {
   background: linear-gradient(#292C33 55%, #16181c);
 }
 
-.flex-container {
+#flex-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,9 +18,9 @@ body {
 h1 {
   color: #9FA5B3;
   opacity: 0;
-  transform: translateX(300px) translateY(-400px) scale(1);
+  transform: translateX(200px) translateY(-300px) scale(1);
   animation-name: title-animation;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -30,7 +30,7 @@ h1 {
 
   0% {
     opacity: 0;
-    transform: translateX(300px) translateY(-400px) scale(1);
+    transform: translateX(300px) translateY(-300px) scale(1);
   }
 
   50% {

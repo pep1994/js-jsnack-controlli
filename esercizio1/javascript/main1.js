@@ -13,9 +13,9 @@ number2 = parseInt(prompt("Inserici qui il secondo numero"));
 
 //logica e output del numero maggiore
 if (number1 > number2) {
-  document.getElementById('title').innerHTML = "Il numero maggiore che l'utente ha inserito è: " + number1;
+  document.getElementById('flex-container').innerHTML = '<h1 id="title">' + "Il numero maggiore che l'utente ha inserito è: " + number1 + '</h1>';
 } else if (number1 < number2) {
-    document.getElementById('title').innerHTML = "Il numero maggiore che l'utente ha inserito è: " +number2;
+    document.getElementById('flex-container').innerHTML = '<h1 id="title">' + "Il numero maggiore che l'utente ha inserito è: " + number2 + '</h1>';
 } else {
-    document.getElementById('title').innerHTML = "I numeri inseriti sono uguali";
+    document.getElementById('flex-container').innerHTML = '<h1 id="title">' + "I numeri inseriti sono uguali " + '</h1>';
 }
